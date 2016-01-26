@@ -1,0 +1,20 @@
+{
+    "name": "pinet/app-download",
+    "description": "The Pinet AppDownload.",
+    "authors": [
+        {
+            "name": "Jake",
+            "email": "jake.xu@pinet.co"
+        }
+    ],
+    "minimum-stability": "dev",
+	"autoload": {
+		"psr-4": {
+			"Pinet\\AppDownload\\": "application/"
+		}
+	},
+	"require": {
+		"php": ">=5.3.0",
+        "guitarpoet/clips-tool": "dev-master"
+	}
+}

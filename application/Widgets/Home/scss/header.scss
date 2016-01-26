@@ -1,0 +1,134 @@
+
+.header {
+	height: 60px;
+	background: #ffffff;
+	padding-top: 12px;
+}
+.header_info {
+	width: 96%;
+	margin: 0 auto;
+	img {
+		margin-right: 10px;
+	}
+	.search {
+		position: relative;
+		min-width: 48%;
+		width: 50%;
+		display: inline-block;
+		input {
+			height: 35px;
+			border: 1px solid #D3D3D3;
+			width: 100%;
+			padding-left: 8px;
+			color: #A4A4A4;
+			font-size: 12px;
+		}
+		span {
+			width: 35px;
+			height: 35px;
+			background: #E7E7E7;
+			display: inline-block;
+			position: absolute;
+			right: 0;
+			top: 0;
+			color: #e7e7e7;
+			.submit {
+				background: url(php_static_url("/application/static/img/search_icon.png")) no-repeat center center;
+				content: "";
+				width: 22px;
+				height: 22px;
+				display: inline-block;
+				position: relative;
+				z-index: 1000;
+				top:6px;
+				left:6px;
+				border: none;
+				color: #e7e7e7;
+			}
+		}
+	}
+	.helper {
+		float: right;
+		display: inline-block;
+		line-height: 36px;
+		a {
+			color: #787878;
+			font-size: 13px;
+			text-decoration: none;
+		}
+	}
+}
+.meau-navbar {
+	height: 55px;
+	width: 100%;
+	line-height: 50px;
+	border-bottom: 1px solid #008CF5;
+	a {
+		text-decoration: none;
+		width: 33.3%;
+		display: inline-block;
+		text-align: center;
+		font-size: 16px;
+		color: #555555;
+		&.active {
+			border-bottom: 5px solid #008CF5;
+			color: #008DF3;
+		}
+	}
+}
+.advertment {
+	border-bottom: 10px solid #eaeaea;
+	border-top:10px solid #eaeaea;
+}
+.advert {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	display: inline-block;
+	width: 48%;
+	margin-right: 2px;
+	.key_word {
+		border-radius: 50%;
+		background: #D8D8D8;
+		width: 45px;
+		height: 45px;
+		display: inline-block;
+		color:#56ABE4;
+		line-height: 45px;
+		margin-left: 15px;
+		text-align: center;
+		font-size: 40px;
+		margin-top: 5px;
+	}
+}
+
+.right_word{
+	float: right;
+	width: 58%;
+	margin-left: 2%;
+	border-left: 1px solid #d8d8d8;
+	padding-left: 4%;
+	span{
+		&:first-child{
+			color: #E01818;
+			margin-bottom: 8px;
+		}
+		font-size: 12px;
+		color: #999999;
+		text-align: left;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+		overflow:hidden;
+		line-height: 12px;
+		display: block;
+		margin: 4px 0;
+	}
+}
+//
+//.advert{
+//	display: inline-block;
+//	width: 50%;
+//	.rightTable{
+//		border-left: solid 1px #e3e3e3;
+//
+//	}
+//}

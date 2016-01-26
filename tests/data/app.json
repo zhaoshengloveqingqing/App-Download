@@ -1,0 +1,35 @@
+{
+	"%entity": {
+		"create_date": "!\\Clips\\now()"
+	},
+    "%app": {
+        "id": "@",
+        "status": "ACTIVE",
+        "$storage": true,
+        "$model": "app"
+    },
+    "%download": {
+        "id": "@",
+        "gateway_id": 1,
+        "device_id": 1,
+        "$storage": true,
+        "$model": "download"
+    },
+    "app*": {
+        "$count": 60,
+        "$template": "%app",
+        "type": "android",
+        "category_id": "!rand(11, 17)",
+        "pv": "!rand(10000, 100000)",
+        "uv": "!rand(10000, 100000)",
+        "name": "App @",
+        "create_date": "!\\Clips\\now('-30 days')"
+    },
+    "download*": {
+        "$count": 60,
+        "$template": "%download",
+        "app_id": "@",
+        "create_date": "!\\Clips\\now(rand(-30, 0).' days')",
+        "status": "INACTIVE"
+    }
+}

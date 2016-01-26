@@ -1,0 +1,121 @@
+@function php_static_url($url) {
+	@return php(Clips\static_url, unquote($url));
+}
+
+@mixin list() {
+	.albumlist{
+		width: 98%;
+		margin: 20px auto;
+		text-align: left;
+		.album{
+			position: relative;
+			display: inline-block;
+			margin-right: 2%;
+			width: 46%;
+			margin-left: 2%;
+			margin-bottom: 10px;
+			text-align: center;
+//			z-index: 1000;
+//			height: 113px;
+//			background: url(php_static_url("/application/static/img/category_bg.png")) no-repeat ;
+			img{
+				width: 100%;
+
+			}
+		}
+		.lableTitle{
+			position: absolute;
+			width: 100%;
+			font-weight: 100;
+			background: rgba(0, 0, 0, 0.5);
+			bottom: 0;
+			height: 20px;
+			color: white;
+			font-size: 12px;
+			line-height: 20px;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+	}
+}
+body {
+	@include list();
+	.header {
+		width: 100%;
+		background: #008CF5;
+		height: 60px;
+		.header_info {
+			width: 94%;
+			margin: 0 auto;
+			a {
+				text-decoration: none;
+				font-size: 18px;
+				color: #F6F6F6;
+				font-weight: 400;
+				line-height: 60px;
+
+			}
+			i:before {
+				color: #444444;
+				font-family: 'Glyphicons Halflings';
+				font-style: normal;
+				width: 18px;
+				height: 18px;
+				display: inline-block;
+				position: relative;
+				top:4px;
+				content: '';
+				background: url(php_static_url("/application/static/img/icon_back.png")) no-repeat 0 center;
+			}
+		}
+		.search {
+			position: relative;
+			min-width: 50%;
+			width: 52%;
+			left:25px;
+			display: inline-block;
+			input {
+				height: 35px;
+				border: 1px solid #D3D3D3;
+				width: 100%;
+				padding-left: 8px;
+				color: #A4A4A4;
+				font-size: 12px;
+			}
+			span {
+				width: 35px;
+				height: 35px;
+				background: #E7E7E7;
+				display: inline-block;
+				position: absolute;
+				right: 0;
+				top: 0;
+				color: #e7e7e7;
+				.submit {
+					background: url(php_static_url("/application/static/img/search_icon.png")) no-repeat center center;
+					content: "";
+					width: 22px;
+					height: 22px;
+					display: inline-block;
+					position: relative;
+					z-index: 1000;
+					top:6px;
+					left:6px;
+					border: none;
+					color: #e7e7e7;
+				}
+			}
+		}
+		.helper {
+			float: right;
+			display: inline-block;
+			a {
+				color: #ffffff;
+				font-size: 14px;
+				line-height: 60px;
+				text-decoration: none;
+			}
+		}
+	}
+
+}

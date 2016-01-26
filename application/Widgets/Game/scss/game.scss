@@ -1,0 +1,150 @@
+body{
+    -webkit-overflow-scrolling: touch;
+}
+.gameListHeader{
+    color:#008CF5;
+    border-left: 5px solid #008CF5;
+    width: 100%;
+    font-size: 20px;
+	margin-top: 8px;
+
+    .more{
+	    a{
+	    color: #787878;
+	    }
+	    float: right;
+	    font-size: 14px;
+	    margin: 5px 12px 0 0;
+	    .more_img {
+		    margin-left: 4px;
+		    img {
+			    margin-top: -2px;
+		    }
+	    }
+
+    }
+    .text{
+        margin-left: 16px;
+    }
+    .board{
+        color:#999999;
+        font-size: 12px;
+        margin-left: 8px;
+    }
+}
+.game_list{
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 10px;
+	border-bottom: 1px solid #ebebeb;
+}
+.gameone{
+    width: 18%;
+	margin-left: 1%;
+	margin-right: 1%;
+    display: inline-block;
+    img{
+	    width: 100%;
+    }
+    p{
+      text-align: center;
+      margin: 5px 0;
+	    text-align: center;
+	    color: #555555;
+	    font-size: 12px;
+	    line-height: 15px;
+	    text-align: center;
+  		text-overflow:ellipsis;
+  		white-space:nowrap;
+  		overflow:hidden;
+  		display: block;
+    }
+}
+
+.rightTable{
+    float: right;
+}
+
+.advert{
+    display: inline-block;
+    width: 50%;
+    .rightTable{
+        border-left: solid 1px #e3e3e3;
+
+    }
+}
+
+.search,.helper{
+    display: inline-block;
+}
+
+.gameonetwo{
+    display: inline-block;
+    width: 50%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+	border-bottom: 1px solid #ebebeb;
+	.hot-img {
+		width: 37%;
+		margin-top: 8px;
+		float: left;
+		margin-right: 4%;
+		img {
+			width: 100%;
+		}
+	}
+	.rightTable {
+		width: 52%;
+		float: right;
+		margin-right: 7%;
+	}
+	h4 {
+		a {
+			color: #555555;
+			font-size: 14px;
+			line-height: 15px;
+			text-align: left;
+			text-overflow:ellipsis;
+			white-space:nowrap;
+			margin-bottom: 5px;
+			overflow:hidden;
+			display: block;
+			font-weight: 200;
+			width: 100%;
+		}
+
+	}
+	p {
+		margin-bottom: 5px;
+		color: #999999;
+		font-size: 12px;
+	}
+	a {
+		color: #008CF5;
+		float: right;
+		margin-top: -2px;
+		font-size: 12px;
+	}
+}
+
+.gamelistforhot{
+    width: 94%;
+    display: block;
+    margin: 0 auto;
+}
+.gamelistdetail{
+
+  .gamelistdetailone{
+    display: inline-block;
+  }
+}
+.gamelist_wrap{
+     overflow-x: scroll;
+     .game_list{
+         width: 710px;
+     }
+     .gameone{
+         margin-right: 0px;
+         width: 63px;
+     }
+}

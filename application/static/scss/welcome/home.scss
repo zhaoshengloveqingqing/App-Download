@@ -1,0 +1,13 @@
+@function php_static_url($url) {
+	@return php(Clips\static_url, unquote($url));
+}
+
+
+body {
+	background: #ffffff !important;
+}
+.menu {
+	width: 100%;
+	background: url(php_static_url("/application/static/img/menu-bg.png")) no-repeat left  center;
+
+}

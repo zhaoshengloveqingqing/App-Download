@@ -1,0 +1,274 @@
+#===============================================================================
+#
+# Categories Table
+#
+# All kinds of category goes into this table, so this table has a type field,
+# in case you want only some kind of category(say, app category)
+#
+#===============================================================================
+categories:
+    form: false
+    pagination: false
+    path:
+        label: Path
+        type: string
+        options:
+            limit: 200
+    name:
+        label: Name
+        type: string
+        options:
+            limit: 64
+    type:
+        label: Type
+        type: string
+        key: true
+        options:
+            limit: 64
+    config:
+        label: Config
+        type: text
+    status:
+        label: Status
+        type: string
+        key: true
+        options:
+            limit: 16
+            default: "ACTIVE"
+    create_date:
+        type: datetime
+        key: true
+    timestamp:
+        type: timestamp
+        key: true
+
+#===============================================================================
+#
+# Products Table
+#
+# The product information table, all kinds of apps information goes here
+#
+#===============================================================================
+apps:
+    form: false
+    pagination: false
+    game_id:
+    category_id:
+        label: Category
+        foreign_key: categories
+    name:
+        label: Name
+        type: string
+        key: true
+        options:
+            limit: 200
+    type:
+        label: Type
+        type: string
+        key: true
+        options:
+            limit: 12
+    status:
+        label: Status
+        type: string
+        key: true
+        options:
+            limit: 16
+            default: "ACTIVE"
+    pv:
+    uv:
+    config:
+        label: Config
+        type: text
+    info:
+        label: Response
+        type: text
+    create_date:
+        label: Create Date
+        type: datetime
+        key: true
+    timestamp:
+        label: Modify Date
+        type: timestamp
+        key: true
+
+#===============================================================================
+#
+# Gateways Table
+#
+# The product information table, all kinds of gateways information goes here
+#
+#===============================================================================
+gateways:
+    form: false
+    pagination: false
+    serial:
+        type: string
+        key: true
+        options:
+            limit: 36
+    name:
+        type: string
+        key: true
+        options:
+            limit: 128
+    mac:
+        type: string
+        key: true
+        options:
+            limit: 17
+            "null": true
+    status:
+        type: string
+        options:
+            limit: 8
+            default: "ACTIVE"
+    create_date:
+        label: Create Date
+        type: datetime
+        key: true
+    timestamp:
+        label: Modify Date
+        type: timestamp
+        key: true
+
+#===============================================================================
+#
+# Devices Table
+#
+# The product information table, all kinds of apps information goes here
+#
+#===============================================================================
+devices:
+    form: false
+    pagination: false
+    mac:
+        type: string
+        key: true
+        options:
+            limit: 17
+            "null": true
+    os:
+        type: string
+        key: true
+        options:
+            limit: 16
+            "null": true
+    os_version:
+        type: string
+        key: true
+        options:
+            limit: 16
+            "null": true
+    browser:
+        type: string
+        key: true
+        options:
+            limit: 16
+            "null": true
+    browser_version:
+        type: string
+        key: true
+        options:
+            limit: 16
+            "null": true
+    uagent:
+        type: string
+        key: true
+        options:
+            limit: 255
+            "null": true
+    create_date:
+        label: Create Date
+        type: datetime
+        key: true
+    timestamp:
+        label: Modify Date
+        type: timestamp
+        key: true
+
+#===============================================================================
+#
+# Downloads Table
+#
+# The product information table, all kinds of apps information goes here
+#
+#===============================================================================
+downloads:
+    form: false
+    pagination: false
+    gateway_id:
+        foreign_key: gateways
+    app_id:
+        label: App ID
+        foreign_key: apps
+    device_id:
+        label: Device ID
+        foreign_key: devices
+    info:
+        type: string
+        options:
+            limit: 20
+            "null": true
+    status:
+        label: Status
+        type: string
+        key: true
+        options:
+            limit: 16
+            default: "INACTIVE"
+    create_date:
+        label: Create Date
+        type: datetime
+        key: true
+    timestamp:
+        label: Modify Date
+        type: timestamp
+        key: true
+
+#===============================================================================
+#
+# Remote files Table
+#
+# The product information table, all kinds of apps information goes here
+#
+#===============================================================================
+remote_files:
+    form: false
+    pagination: false
+    game_id:
+    url:
+        label: URL
+        type: string
+        key: true
+        options:
+            limit: 250
+    filename:
+        label: File Name Key
+        type: string
+        key: true
+        options:
+            limit: 50
+    type:
+        label: Type
+        type: string
+        key: true
+        options:
+            limit: 5
+            default: "image"
+    create_date:
+        label: Modify Date
+        type: timestamp
+        key: true
+
+download_periods:
+    form: false
+    pagination: false
+    start_date:
+        label: Start Date
+        type: datetime
+        key: true
+    end_date:
+        label: End Date
+        type: datetime
+        key: true

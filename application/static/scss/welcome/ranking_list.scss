@@ -1,0 +1,68 @@
+@function php_static_url($url) {
+	@return php(Clips\static_url, unquote($url));
+}
+
+
+body {
+	background: #ffffff !important;
+}
+.menu {
+	width: 100%;
+	background: url(php_static_url("/application/static/img/menu-bg.png")) no-repeat left  center;
+
+}
+.ranking-btn {
+	padding: 10px 0;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	.category_group {
+		border-radius: 8px;
+		width: 270px;
+		margin: 0 auto;
+		height: 30px;
+		line-height: 30px;
+		a {
+			width: 90px;
+			display: inline-block;
+			border: 1px solid #008CF5;
+			&:first-child {
+				border-right: none;
+				border-radius: 8px 0  0 8px;
+			}
+			&:last-child {
+				border-left: none;
+				border-radius: 0 8px 8px 0;
+			}
+			&.active {
+				background: #008CF5;
+				color: #ffffff;
+				box-shadow: none;
+			}
+		}
+	}
+}
+.ranking-list {
+	margin-top: 10px;
+	border-top: 1px solid #EBEBEB;
+}
+.game {
+	img {
+		vertical-align: top;
+		width: 65px;
+	}
+	.gameinfo {
+		p.belong {
+			display: none;
+		}
+	}
+}
+.banner {
+	width: 100%;
+	.banner_img {
+		img{
+			max-height: 130px;
+			max-width: 415px;
+		}
+	}
+}

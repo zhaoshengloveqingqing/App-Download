@@ -1,0 +1,44 @@
+.alertgame{
+  position: absolute;
+  display: none;
+  top: 20%;
+  left: 5%;
+  width: 90%;
+  margin: 0 auto;
+  background: #fff;
+
+  .content{
+      padding: 20px;
+      
+      img{
+        float: left;
+      }
+      
+      span{
+          vertical-align: -webkit-baseline-middle;
+          font-size: 14px;
+          margin-left: 5px;
+      }
+        
+  }
+  .alert_header_info{
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    background: #048CF5;
+    color: #fff;
+    padding: 0 5px;
+    
+    span a{
+        color:white;
+    }
+  }
+
+  .rightText{
+    float: right;
+  }
+
+  .leftText{
+    float: left;
+  }
+}

@@ -1,0 +1,12 @@
+id,path,name,type,config,status,create_date
+1,/1/,游戏,app,,ACTIVE,now()
+1002,/1/1002/,策略塔防,app,{"icon":"application\/static\/img\/category\/tower.png"},ACTIVE,now()
+1003,/1/1003/,角色扮演,app,{"icon":"application\/static\/img\/category\/role.png"},ACTIVE,now()
+1004,/1/1004/,射击飞行,app,{"icon":"application\/static\/img\/category\/shot.png"},ACTIVE,now()
+1005,/1/1005/,动作冒险,app,{"icon":"application\/static\/img\/category\/checkpoint.png"},ACTIVE,now()
+1006,/1/1006/,棋牌麻将,app,{"icon":"application\/static\/img\/category\/chess.png"},ACTIVE,now()
+1007,/1/1007/,益智休闲,app,{"icon":"application\/static\/img\/category\/relax.png"},ACTIVE,now()
+1009,/1/1009/,体育竞速,app,{"icon":"application\/static\/img\/category\/sport.png"},ACTIVE,now()
+1011,/1/1011/,其他游戏,app,{"icon":"application\/static\/img\/category\/other.png"},ACTIVE,now()
+1013,/1/1013/,模拟经营,app,{"icon":"application\/static\/img\/category\/manage.png"},ACTIVE,now()
+1014,/1/1014/,跑酷赛车,app,{"icon":"application\/static\/img\/category\/strategy.png"},ACTIVE,now()

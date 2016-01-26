@@ -1,0 +1,39 @@
+body{
+	background: #F0F5FB;
+	max-width: 415px;
+	margin: 0 auto;
+	overflow: scroll !important;
+	font-family: "Lantinghei TC";
+}
+.logo {
+	margin-bottom: 45px !important;
+}
+
+.about_content {
+	ul {
+		padding-left: 0;
+		background: #FFFFFF;
+		border-top:1px solid #979797;
+		border-bottom:1px solid #979797;
+		margin-bottom: 70px;
+		li{
+			list-style: none;
+			height: 40px;
+			line-height: 40px;
+			margin-left: 8px;
+			border-bottom:1px solid #979797;
+			&:last-child {
+				border-bottom: none;
+			}
+			a {
+				padding-left: 12px;
+				text-decoration: none;
+				color:#444444;
+				font-size: 16px;
+			}
+		}
+	}
+}
+.about-Copyright {
+	margin-top: 120px;
+}

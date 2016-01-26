@@ -1,0 +1,11 @@
+/application/cache/
+/application/static/apps/
+/application/static/img/apps/
+/vendor
+sync.sh
+composer.lock
+.idea
+npm-debug.log
+.DS_Store
+.tags
+.tags_sorted_by_file

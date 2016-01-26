@@ -1,0 +1,49 @@
+@function php_static_url($url) {
+	@return php(Clips\static_url, unquote($url));
+}
+
+body {
+	overflow: scroll !important;
+	max-width: 415px;
+	margin: 0 auto;
+}
+
+.help-content {
+	width: 90%;
+	margin: 20px auto 120px;
+	#accordion {
+		#default {
+			border-radius: 0;
+			border: none;
+			border-bottom: 1px solid #ebebeb;
+			padding-top: 6px;
+			padding-bottom: 6px;
+			box-shadow: none;
+			margin-top: 0;
+			.panel-heading {
+				background: transparent;
+				border-radius: 0;
+			}
+			.panel-body {
+				border-top: none;
+			}
+		}
+
+		h4 {
+			a {
+				color: #555555;
+				font-size: 16px;
+				text-decoration: none;
+			}
+			i {
+				width: 10px;
+				height: 6px;
+				display: inline-block;
+				float: right;
+				margin-top: 5px;
+				background: url(php_static_url("/application/static/img/menu-down.png")) no-repeat right center;
+			}
+		}
+	}
+
+}

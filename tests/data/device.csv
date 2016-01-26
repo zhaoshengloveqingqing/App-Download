@@ -1,0 +1,2 @@
+id,gateway_id,mac,os,os_version,browser,browser_version,uagent,create_date
+1,1,-,-,-,-,-,-,now()

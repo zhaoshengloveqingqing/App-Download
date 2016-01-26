@@ -1,0 +1,53 @@
+table_prefix:
+    - app_
+namespace:
+    - Pinet\AppDownload\
+route_rules:
+    - /application/rules/route.rules
+    - /rules/route.rules
+filters:
+    - Widget
+    - Rules
+    - Form
+    - Scss
+    - Css
+    - SmartyView
+    - MustacheView
+    - JsonView
+    - DirectView
+helpers:
+    - web
+    - html
+babel: "/opt/local/bin/node /opt/local/bin/babel"
+default_view: Smarty
+widget_cache: true
+gateway: meiling001
+debug_sass: true
+sass_preload:
+    - variables
+logger:
+    handlers:
+        Stream:
+            - php://stdout
+            - debug
+        FirePHP:
+            - debug
+        ChromePHP:
+            - debug
+    processors:
+        - Git
+        - PsrLogMessage
+        - Introspection
+        - Tag
+datasources:
+    default: clips
+    mysql:
+        type: MySQLi
+        database: app_download_dev
+        table_prefix: app_
+    clips:
+        type: clips
+        datasource: mysql
+        table_prefix: app_
+        filters:
+            - prefix

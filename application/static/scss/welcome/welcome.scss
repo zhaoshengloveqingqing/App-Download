@@ -1,0 +1,58 @@
+body{
+	background: #F0F5FB;
+	max-width: 415px;
+	margin: 0 auto;
+	overflow: scroll !important;
+}
+
+
+@function php_static_url($url) {
+	@return php(Clips\static_url, unquote($url));
+}
+
+
+.welcome{
+	display: table;
+	margin: 40px 15px;
+	min-height: 255px;
+	color:#ffffff;
+	background: url(php_static_url("/application/static/img/welcome_info_bg.png")) no-repeat left center;
+	background-size: 100% 100%;
+	.welcome-info{
+		@include notice-common;
+		display: table-cell;
+		vertical-align: middle;
+		p {
+			font-size: 12px;
+			margin-top: 25px;
+		}
+		h1 {
+			font-size: 20px;
+		}
+		a {
+			@include btn();
+			margin-right: 20px;
+			float: right;
+			color: #ffffff;
+			text-decoration: none;
+			background:-webkit-linear-gradient(top, #20A7D7 0%,#2591B8 100%);
+			box-shadow: 0 1px 3px rgba(0, 0, 0, .5)
+
+		}
+		.footer {
+			margin-top: 20px;
+		}
+
+		.footer a {
+			display: inline-block;
+			width: 65px;
+			height: 25px;
+			line-height: 13px;
+			border: 1px solid #4BACF7;
+			border-radius: 10px;
+			color: #4BACF7;
+			padding: 5px 10px;
+			margin-left: 5px;
+		}
+	}
+}
